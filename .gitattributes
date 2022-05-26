@@ -1,0 +1,10 @@
+*.a filter=lfs diff=lfs merge=lfs -text
+JBUniMP/Classes/Core/Libs/liblibWeex.a filter=lfs diff=lfs merge=lfs -text
+liblibWeex.a filter=lfs diff=lfs merge=lfs -text
+MAMapKit filter=lfs diff=lfs merge=lfs -text
+IJKMediaFrameworkWithSSL.framework filter=lfs diff=lfs merge=lfs -text
+MAMapKit.framework filter=lfs diff=lfs merge=lfs -text
+*.framework filter=lfs diff=lfs merge=lfs -text
+*.framework/* filter=lfs diff=lfs merge=lfs -text
+JBUniMP/Classes/Features/Libs/MAMapKit.framework/MAMapKit filter=lfs diff=lfs merge=lfs -text
+JBUniMP/Classes/Features/Libs/IJKMediaFrameworkWithSSL.framework/IJKMediaFrameworkWithSSL filter=lfs diff=lfs merge=lfs -text

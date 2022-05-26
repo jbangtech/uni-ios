@@ -1,0 +1,6 @@
+framework module JBUniMP {
+  umbrella header "JBUniMP.h"
+
+  export *
+  module * { export * }
+}
