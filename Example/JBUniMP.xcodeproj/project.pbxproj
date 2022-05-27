@@ -216,6 +216,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				F3FB0D5DF7AED984EE84F1FA /* [CP] Copy Pods Resources */,
+				9756CECBED989BB548A9AEC9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +326,50 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9756CECBED989BB548A9AEC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JBUniMP_Example/Pods-JBUniMP_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseAuth/FirebaseAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseStorage/FirebaseStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JBUniMP_Example/Pods-JBUniMP_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F06E6AF6F80C1F943FFD3435 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -354,13 +399,26 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-JBUniMP_Example/Pods-JBUniMP_Example-resources.sh",
-				"${PODS_ROOT}/../../JBUniMP/Assets/uni-jsframework-vue3.js",
-				"${PODS_ROOT}/../../JBUniMP/Assets/uni-jsframework.js",
-				"${PODS_ROOT}/../../JBUniMP/Assets/unincomponents.ttf",
-				"${PODS_ROOT}/../../JBUniMP/Assets/weex-polyfill.js",
-				"${PODS_ROOT}/../../JBUniMP/Assets/weexUniJs.js",
-				"${PODS_ROOT}/../../JBUniMP/Assets/__uniappes6.js",
-				"${PODS_ROOT}/../../JBUniMP/Assets/PandoraApi.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/uni-jsframework-vue3.js",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/uni-jsframework.js",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/unincomponents.ttf",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/weex-polyfill.js",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/weexUniJs.js",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/__uniappes6.js",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Core/Resources/PandoraApi.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/userPosition@2x.png",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/AlipaySDK.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/AMap.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/BDSClientEASRResources",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/DCMediaEditingController.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/DCMediaVideo.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/DCPGVideo.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/DCSVProgressHUD.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/DCTZImagePickerController.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/mapapi.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/qucsdkResources.bundle",
+				"${PODS_ROOT}/../../JBangUniMP/Classes/Features/Resources/WeiboSDK.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
@@ -371,6 +429,19 @@
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/weexUniJs.js",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/__uniappes6.js",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PandoraApi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/userPosition@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AlipaySDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BDSClientEASRResources",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCMediaEditingController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCMediaVideo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCPGVideo.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCSVProgressHUD.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/DCTZImagePickerController.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/mapapi.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/qucsdkResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
