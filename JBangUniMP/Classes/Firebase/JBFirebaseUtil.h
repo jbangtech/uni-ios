@@ -5,7 +5,7 @@
 //  Created by E·CHAN on 2022/5/24.
 //
 
-#import <JBUniMP/JBUniMPFirebaseUtil.h>
+#import <JBangUniMP/JBUniMPFirebaseUtil.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
