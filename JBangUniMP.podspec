@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.resources = ['JBangUniMP/Classes/Core/Resources/*', 'JBangUniMP/Classes/Features/Resources/*']
     core.source_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/*.{h}', 'JBangUniMP/Classes/Core/Headers/*.{h}', 'JBangUniMP/Classes/Features/inc/**/*.h'
-    core.vendored_libraries = 'JBangUniMP/Classes/Core/Libs/lib[name].a', 'JBangUniMP/Classes/Features/Libs/lib[name].a'
+    core.vendored_libraries = 'JBangUniMP/Classes/Core/Libs/liblibWeex.a', 'JBangUniMP/Classes/Features/Libs/libDCUniAmap.a'
     core.vendored_frameworks = 'JBangUniMP/Classes/*.framework', 'JBangUniMP/Classes/Features/Libs/*.framework'
     core.public_header_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/JBUniMP.h'
     
