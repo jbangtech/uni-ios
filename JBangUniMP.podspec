@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JBangUniMP'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'JBUniMP'
 
   s.homepage         = 'https://github.com/jbangtech/uni-ios'
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.subspec 'Core' do |core|
     core.resources = ['JBangUniMP/Classes/Core/Resources/*', 'JBangUniMP/Classes/Features/Resources/*']
     core.source_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/*.{h}', 'JBangUniMP/Classes/Core/Headers/*.{h}', 'JBangUniMP/Classes/Features/inc/**/*.h'
-    core.vendored_libraries = 'JBangUniMP/Classes/Core/Libs/*.a', 'JBangUniMP/Classes/Features/Libs/*.a'
+    core.vendored_libraries = 'JBangUniMP/Classes/Core/Libs/lib[name].a', 'JBangUniMP/Classes/Features/Libs/lib[name].a'
     core.vendored_frameworks = 'JBangUniMP/Classes/*.framework', 'JBangUniMP/Classes/Features/Libs/*.framework'
     core.public_header_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/JBUniMP.h'
     
