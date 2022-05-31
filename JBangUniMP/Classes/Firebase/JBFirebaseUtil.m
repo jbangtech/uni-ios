@@ -7,9 +7,9 @@
 
 #import "JBFirebaseUtil.h"
 
-#import "FirebaseCore.h"
-#import "FirebaseAuth.h"
-#import "FirebaseStorage.h"
+@import FirebaseCore;
+@import FirebaseAuth;
+@import FirebaseStorage;
 
 #import <JBUniMP/JBGcsInfo.h>
 

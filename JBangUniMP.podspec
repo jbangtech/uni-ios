@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Core' do |core|
     core.resources = ['JBangUniMP/Classes/Core/Resources/*', 'JBangUniMP/Classes/Features/Resources/*']
-    core.source_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/*.{h}', 'JBangUniMP/Classes/Core/Headers/*.{h}', 'JBangUniMP/Classes/Features/inc/**/*.h'
+    core.source_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/*.{h}', 'JBangUniMP/Classes/Core/Headers/*.{h}', 'JBangUniMP/Classes/Core/Headers/**/*.{h}', 'JBangUniMP/Classes/Features/inc/**/*.h'
     core.vendored_libraries = 'JBangUniMP/Classes/Core/Libs/*.a', 'JBangUniMP/Classes/Features/Libs/*.a'
     core.vendored_frameworks = 'JBangUniMP/Classes/*.framework', 'JBangUniMP/Classes/Features/Libs/*.framework'
     core.public_header_files = 'JBangUniMP/Classes/JBUniMP.framework/Headers/JBUniMP.h'
@@ -37,10 +37,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'Firebase' do |firebase|
     firebase.source_files = 'JBangUniMP/Classes/Firebase/*.{h,m}'
-    firebase.dependency 'FirebaseAnalytics'
-    firebase.dependency 'FirebaseMessaging'
-    firebase.dependency 'FirebaseStorage'
-    firebase.dependency 'FirebaseAuth'
+    firebase.dependency 'FirebaseAnalytics', '>= 8.15.0'
+    firebase.dependency 'FirebaseMessaging', '>= 8.15.0'
+    firebase.dependency 'FirebaseStorage', '>= 8.15.0'
+    firebase.dependency 'FirebaseAuth', '>= 8.15.0'
   end
   
 end
