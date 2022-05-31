@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'JBangUniMP'
-  s.version          = '0.1.8'
+  s.version          = '0.1.9'
   s.summary          = 'JBUniMP'
 
   s.homepage         = 'https://github.com/jbangtech/uni-ios'
@@ -33,14 +33,13 @@ Pod::Spec.new do |s|
     core.dependency 'AFNetworking'
     core.dependency 'SDWebImage'
     core.dependency 'MBProgressHUD'
-    core.dependency 'MBProgressHUD'
   end
   
   s.subspec 'Firebase' do |firebase|
     firebase.source_files = 'JBangUniMP/Classes/Firebase/*.{h,m}'
     firebase.dependency 'FirebaseAnalytics'
     firebase.dependency 'FirebaseMessaging'
-    firebase.dependency 'FirebaseStorage', '~> 8.15.0'
+    firebase.dependency 'FirebaseStorage'
     firebase.dependency 'FirebaseAuth'
   end
   

@@ -30,6 +30,10 @@
         NSLog(@"FIREBASE ALREADY EXIST!!");
         return;
     }
+    if (!info) {
+        NSLog(@"NO GCS INFO!!");
+        return;
+    }
     FIROptions *options = [[FIROptions alloc] initWithGoogleAppID:info.GOOGLE_APP_ID GCMSenderID:info.GCM_SENDER_ID];
     options.APIKey = info.API_KEY;
     options.projectID = info.PROJECT_ID;

@@ -107,18 +107,18 @@ PODS:
   - GoogleUtilities/UserDefaults (7.7.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.7.2)
-  - JBangUniMP (0.1.7):
-    - JBangUniMP/Core (= 0.1.7)
-    - JBangUniMP/Firebase (= 0.1.7)
-  - JBangUniMP/Core (0.1.7):
+  - JBangUniMP (0.1.9):
+    - JBangUniMP/Core (= 0.1.9)
+    - JBangUniMP/Firebase (= 0.1.9)
+  - JBangUniMP/Core (0.1.9):
     - AFNetworking
     - MBProgressHUD
     - SDWebImage
-  - JBangUniMP/Firebase (0.1.7):
+  - JBangUniMP/Firebase (0.1.9):
     - FirebaseAnalytics
     - FirebaseAuth
     - FirebaseMessaging
-    - FirebaseStorage (~> 8.15.0)
+    - FirebaseStorage
   - MBProgressHUD (1.2.0)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
@@ -169,12 +169,12 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
   GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   GTMSessionFetcher: 5595ec75acf5be50814f81e9189490412bad82ba
-  JBangUniMP: e3c3ed132435253e92c057930f5e21e8729e5dd9
+  JBangUniMP: 6ade3df5c0e0be0e27ad50f3c805d2aa0097df12
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
   SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
 
-PODFILE CHECKSUM: c2471b7d050d629ca1e35f751d3c58a0eb37a7f7
+PODFILE CHECKSUM: cad3e057e9318302c773485d602b54b43808a100
 
 COCOAPODS: 1.11.2
